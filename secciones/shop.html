@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href=../estilos/estilos.css>
+    <script src="https://kit.fontawesome.com/185ecebfec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- Lista desordenadas -->
+        <nav>
+
+            <a href="../index.html"> <img class="imagenLogo" src="../imagenes/logo.png" alt="logo"> </a>
+
+            <ul>
+                <li>
+                    <i class="fas fa-home"></i>
+                    <a href="..//index.html">Noticias</a>
+                </li>
+                <li>
+                    <i class="fas fa-history"></i>
+                    <a href="historia.html">Historia</a>
+                </li>
+                <li>
+                    <i class="far fa-images"></i>
+                    <a href="fotos.html">Fotos</a>
+                </li>
+                <li>
+                    <i class="fas fa-shopping-cart"></i>
+                    <A href="shop.html">Shop</A>
+                </li>
+                <li>
+                    <i class="fas fa-align-left"></i>
+                    <a href="estadisticas.html">estadisticas</a>
+
+                </li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+
+    <h1 class="tituloShop">CONTACTANOS!!!</h1>
+    <section class="contactoPadre">
+        <form class="contacto">
+            <label for="name">Ingrese su nombre</label>
+            <input type="text" name="name" /><br>
+            <label for="email">Ingrese su email</label>
+            <input type="text" placeholder="aaaaa@gmail.com" name="email" /><br>
+            <label for="password">Ingrese su Contraseña</label>
+            <input name="usuario" type="password" id="password" /><br>
+            <!-- área de texto -->
+            <label for="observaciones"> Estampado (nombre y numero) <br>
+                <textarea></textarea>
+            </label> <br>
+            <!-- Menú desplegable -->
+            <div>Seleccione su talle.</div>
+            <select name="talles">
+                <option value="S">SMALL</option>
+                <option value="M">MEDIUM</option>
+                <option value="L">LARGE</option>
+            </select>
+            <!-- Menú Radio -->
+            <div>Seleccione modelo</div>
+            <div>Camiseta titular 2021 </div>
+            <input type="radio" name="Modelo" value="Camiseta titular 2021" />
+            <div>Camiseta suplente 2021</div>
+            <input type="radio" name="Modelo" value="Camiseta suplente 2021" />
+            <div>Camiseta alternativa 2021</div>
+            <input type="radio" name="Modelo" value="Camiseta alternativa 2021" />
+            <!-- checkbox -->
+            <div>Acepto término y condiciones</div>
+            <input type="checkbox" name="Acepto" /> <br>
+            <!-- Botones -->
+            <input type="submit" value="Enviar Datos" />
+            <input type="reset" value="Limpiar Datos" />
+            <input type="button" value="Non Action" />
+    
+        </form>
+        <img class="mapa" src="../imagenes/ubicacion.jpg" alt="maps">
+    </section>
+
+
+
+    <footer>
+        Proximamente seguinos en nuestras redes sociales!!!
+    </footer>
+    <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter-square"></i>
+</body>
+
+
+</html>

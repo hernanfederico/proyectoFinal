@@ -1,0 +1,561 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+/*secciones en general*/
+
+footer {
+    color: cornsilk;
+    text-decoration: underline overline;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.fab
+{
+     margin-left: 40px;
+}
+
+h1 {
+    color: white;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: 'Staatliches', cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 15px;
+
+}
+
+h3 {
+    color: wheat;
+    text-decoration: underline overline;
+    padding-top: 20px;
+}
+
+body {
+    background: #B42121;
+}
+
+li {
+    display: inline-block;
+    margin-left: 75px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+a:hover {
+    color: darkred;
+
+}
+
+nav {
+    background: #FF1616;
+    /*
+    margin-left: 400px; */
+    text-align: center;
+}
+
+
+img {
+    display: block;
+}
+
+/* index */
+
+
+.containerIndex1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "foto texto";
+    gap: 5px;
+}
+
+.containerIndex2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "texto foto2";
+    gap: 5px;
+}
+
+
+.dt {
+    grid-area: foto;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 15px;
+    margin-top: 20px;
+
+
+
+}
+
+.parrafoIndex1 {
+    grid-area: texto;
+    color: white;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.parrafoIndex2 {
+    grid-area: texto;
+    color: white;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+
+
+.tituloNoticia {
+    color: white;
+    text-decoration-line: underline overline;
+    text-decoration-style: double;
+    text-underline-position: under;
+    font-size: 30px;
+    font-family: 'Staatliches', cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 100px;
+
+}
+
+
+
+.jugador {
+    grid-area: foto2;
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 23px;
+
+
+}
+
+
+.imagenLogo {
+    margin-left: center;
+    display: inline;
+}
+
+.imagenLogo:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.videoKun {
+    margin-left: 15px;
+}
+
+
+
+/* historia */
+
+.imagenCopa {
+    padding-bottom: 10%;
+    padding-left: 25%;
+}
+
+.parrafoHistoria {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2px;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+
+.imagenCopa {
+    padding-top: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.padreHistoria {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "intercontinental libertadores interamericana supercopa sudamericana recopa suruga ";
+    gap: 5px;
+    padding-top: 10px;
+}
+
+.imagenCopa.intercontinental {
+    grid-area: intercontinental;
+}
+
+.imagenCopa.libertadores {
+    grid-area: libertadores;
+}
+
+.imagenCopa.interamericana {
+    grid-area: interamericana;
+    width: 120px;
+    height: 100px;
+}
+
+.imagenCopa.supercopa {
+    grid-area: supercopa;
+}
+
+.imagenCopa.sudamericana {
+    grid-area: sudamericana;
+}
+
+.imagenCopa.recopa {
+    grid-area: recopa;
+}
+
+.imagenCopa.suruga {
+    grid-area: suruga;
+}
+
+/*animaciones copas*/
+
+.imagenCopa:hover {
+    transform: scale(1.4);
+}
+
+.cantidad {
+    color: white;
+    font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Staatliches', cursive;
+}
+
+
+
+
+
+
+
+/*galeria de fotos*/
+
+
+.tituloFoto {
+    margin-left: 20%;
+}
+
+.padre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "foto1 foto2 foto3"
+        "foto4 foto5 foto6"
+        "foto7 foto8 foto9"
+        "foto10 foto11 foto12";
+    gap: 5px;
+
+
+}
+
+.foto1 {
+    grid-area: foto1;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto2 {
+    grid-area: foto2;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto3 {
+    grid-area: foto3;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto4 {
+    grid-area: foto4;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto5 {
+    grid-area: foto5;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto6 {
+    grid-area: foto6;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto7 {
+    grid-area: foto7;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto8 {
+    grid-area: foto8;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto9 {
+    grid-area: foto9;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto10 {
+    grid-area: foto10;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto11 {
+    grid-area: foto11;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.foto12 {
+    grid-area: foto12;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media only screen and (max-width: 620px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .imagenLogo {
+        grid-area: logo;
+
+    }
+
+    .secciones {
+        grid-area: secciones;
+    }
+
+
+
+    h1 {
+        color: black
+    }
+
+    .padre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas:
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+            "foto5"
+            "foto6"
+            "foto7"
+            "foto8"
+            "foto9"
+            "foto10"
+            "foto11"
+            "foto12";
+    }
+
+    .foto1 {
+        grid-area: foto1;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .foto2 {
+        grid-area: foto2;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .foto3 {
+        grid-area: foto3;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .foto4 {
+        grid-area: foto4;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .foto5 {
+        grid-area: foto5;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .foto6 {
+        grid-area: foto6;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .foto7 {
+        grid-area: foto7;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .foto8 {
+        grid-area: foto8;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .foto9 {
+        grid-area: foto9;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .foto10 {
+        grid-area: foto10;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .foto11 {
+        grid-area: foto11;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .foto12 {
+        grid-area: foto12;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+/* Estadisticas */
+
+.estadisticasPlantel1 {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    
+}
+
+
+.subtituloEst1{
+    margin-left: 15px;
+}
+
+.subtituloEst2{
+    margin-left: 15px;
+}
+
+
+
+.estadisticasPadre  {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-areas:
+    "subtituloEst1 subtituloEst2"
+    "foto1 foto3"
+    "foto2 foto4";
+    }
+
+    .estadisticas1 {
+        grid-area: foto1;
+        margin-left: 15px;
+        margin-top: 10%;
+
+    }
+    .estadisticas2 {
+        grid-area: foto2;
+        margin-left: 15px;
+        height: 90%;
+        width: 90%;
+    
+    }
+
+    .estadisticasPlantel1 {
+        grid-area: foto3;
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+
+    .estadisticasPlantel2 {
+        grid-area: foto4;
+        margin-left: 15px;
+        padding-left: 15px;
+        padding-bottom: 120px;
+    }
+
+.subtituloEst1 {
+    grid-area: subtituloEst1;
+}
+.subtituloEst2 {
+    grid-area: subtituloEst2;
+}
+
+
+/* shop */
+
+form {
+    padding-left: 30px;
+}
+
+.tituloShop {
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+i {
+    color: white;
+}
+
+.contactoPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "contacto mapa";
+   
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+.mapa {
+    grid-area: mapa;
+  
+}
