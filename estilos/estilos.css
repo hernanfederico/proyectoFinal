@@ -16,9 +16,9 @@ footer {
     padding-bottom: 20px;
 
 }
-.fab
-{
-     margin-left: 40px;
+
+.fab {
+    margin-left: 40px;
 }
 
 h1 {
@@ -39,7 +39,8 @@ h3 {
 }
 
 body {
-    background: #B42121;
+    background: rgb(226, 12, 12);
+    background: linear-gradient(90deg, rgba(226, 12, 12, 0.9023984593837535) 0%, rgba(226, 12, 12, 0.9023984593837535) 0%, rgba(228, 11, 11, 1) 0%, rgba(121, 9, 9, 0) 0%, rgba(125, 9, 9, 1) 0%, rgba(160, 6, 6, 1) 18%, rgba(255, 0, 0, 1) 45%, rgba(232, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100%);
 }
 
 li {
@@ -63,11 +64,13 @@ a:hover {
 }
 
 nav {
-    background: #FF1616;
-    /*
-    margin-left: 400px; */
+    
+    background: radial-gradient(circle, rgba(240, 0, 0, 1) 0%, rgba(79, 5, 5, 1) 100%);
     text-align: center;
 }
+
+
+
 
 
 img {
@@ -179,6 +182,17 @@ img {
 .imagenCopa {
     padding-bottom: 10%;
     padding-left: 25%;
+    transition: .8s;
+}
+
+.imagenCopa:hover {
+
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    scale: (1,4);
 }
 
 .parrafoHistoria {
@@ -237,9 +251,7 @@ img {
 
 /*animaciones copas*/
 
-.imagenCopa:hover {
-    transform: scale(1.4);
-}
+
 
 .cantidad {
     color: white;
@@ -468,60 +480,62 @@ img {
 .estadisticasPlantel1 {
     margin-left: 15px;
     margin-bottom: 15px;
-    
+
 }
 
 
-.subtituloEst1{
+.subtituloEst1 {
     margin-left: 15px;
 }
 
-.subtituloEst2{
+.subtituloEst2 {
     margin-left: 15px;
 }
 
 
 
-.estadisticasPadre  {
+.estadisticasPadre {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 10% 45% 45%;
     grid-template-areas:
-    "subtituloEst1 subtituloEst2"
-    "foto1 foto3"
-    "foto2 foto4";
-    }
+        "subtituloEst1 subtituloEst2"
+        "foto1 foto3"
+        "foto2 foto4";
+}
 
-    .estadisticas1 {
-        grid-area: foto1;
-        margin-left: 15px;
-        margin-top: 10%;
+.estadisticas1 {
+    grid-area: foto1;
+    margin-left: 15px;
+    margin-top: 10%;
 
-    }
-    .estadisticas2 {
-        grid-area: foto2;
-        margin-left: 15px;
-        height: 90%;
-        width: 90%;
-    
-    }
+}
 
-    .estadisticasPlantel1 {
-        grid-area: foto3;
-        margin-left: 15px;
-        padding-left: 15px;
-    }
+.estadisticas2 {
+    grid-area: foto2;
+    margin-left: 15px;
+    height: 90%;
+    width: 90%;
 
-    .estadisticasPlantel2 {
-        grid-area: foto4;
-        margin-left: 15px;
-        padding-left: 15px;
-        padding-bottom: 120px;
-    }
+}
+
+.estadisticasPlantel1 {
+    grid-area: foto3;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+.estadisticasPlantel2 {
+    grid-area: foto4;
+    margin-left: 15px;
+    padding-left: 15px;
+    padding-bottom: 120px;
+}
 
 .subtituloEst1 {
     grid-area: subtituloEst1;
 }
+
 .subtituloEst2 {
     grid-area: subtituloEst2;
 }
@@ -547,8 +561,8 @@ i {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "contacto mapa";
-   
+        "contacto mapa";
+
 }
 
 .contacto {
@@ -557,5 +571,5 @@ i {
 
 .mapa {
     grid-area: mapa;
-  
+
 }
