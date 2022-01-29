@@ -6,6 +6,21 @@
 
 /*secciones en general*/
 
+
+.nav-item {
+    margin-left: 10px;
+    padding-left: 20px;
+
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
 footer {
     color: cornsilk;
     text-decoration: underline overline;
@@ -64,7 +79,7 @@ a:hover {
 }
 
 nav {
-    
+
     background: radial-gradient(circle, rgba(240, 0, 0, 1) 0%, rgba(79, 5, 5, 1) 100%);
     text-align: center;
 }
@@ -187,12 +202,12 @@ img {
 
 .imagenCopa:hover {
 
-    transform:rotate(360deg);
-    -ms-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -webkit-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
-    scale: (1,4);
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+
 }
 
 .parrafoHistoria {
@@ -205,8 +220,8 @@ img {
 
 .imagenCopa {
     padding-top: 15px;
-    width: 100px;
-    height: 100px;
+    width: 135px;
+    height: 135px;
 }
 
 .padreHistoria {
@@ -229,8 +244,8 @@ img {
 
 .imagenCopa.interamericana {
     grid-area: interamericana;
-    width: 120px;
-    height: 100px;
+    width: 150px;
+    height: 135px;
 }
 
 .imagenCopa.supercopa {
@@ -474,6 +489,95 @@ img {
     }
 }
 
+/*Contacto*/
+
+
+.row {
+    padding-left: 15px;
+
+
+
+}
+
+.tituloMapa {
+    color: white;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: 'Staatliches', cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 15px;
+}
+
+.btn {
+    background: red;
+    color: white;
+}
+
+.btn:hover {
+    background: red;
+}
+
+.col {
+    margin-bottom: 10px;
+}
+
+.row1 {
+    margin-bottom: 10px;
+}
+
+.col1 {
+    margin-bottom: 10px;
+}
+
+.form-label {
+    color: white;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.contactoPadre {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: 15% 85%;
+    grid-template-areas:
+    "titulo titulo2"    
+    "contacto mapa";
+}
+
+.tituloShop {
+    grid-area: titulo;
+}
+
+.tituloMapa {
+    grid-area: titulo2;
+}
+
+.row {
+    grid-area: contacto;
+}
+
+.mapa {
+    grid-area: mapa;
+    padding-left: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    padding-left: 30px;
+}
+
+.tituloShop {
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+i {
+    color: white;
+}
 
 /* Estadisticas */
 
@@ -538,38 +642,4 @@ img {
 
 .subtituloEst2 {
     grid-area: subtituloEst2;
-}
-
-
-/* shop */
-
-form {
-    padding-left: 30px;
-}
-
-.tituloShop {
-    padding-left: 30px;
-    padding-bottom: 20px;
-}
-
-i {
-    color: white;
-}
-
-.contactoPadre {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "contacto mapa";
-
-}
-
-.contacto {
-    grid-area: contacto;
-}
-
-.mapa {
-    grid-area: mapa;
-
 }
