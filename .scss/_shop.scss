@@ -1,0 +1,100 @@
+.row {
+    padding-left: 15px;
+}
+
+.tituloMapa {
+    color: white;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: 'Staatliches', cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 15px;
+}
+
+.btn {
+    background: red;
+    color: white;
+}
+
+.btn:hover {
+    background: red;
+}
+
+.col {
+    margin-bottom: 10px;
+}
+
+.row1 {
+    margin-bottom: 10px;
+}
+
+.col1 {
+    margin-bottom: 10px;
+}
+
+.form-label {
+    color: white;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.contactoPadre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-row: 15% 85%;
+    grid-template-areas: "titulo titulo2"
+        "contacto mapa";
+}
+
+.tituloShop {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    grid-area: titulo;
+}
+
+.tituloMapa {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    grid-area: titulo2;
+}
+
+.row {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    grid-area: contacto;
+}
+
+.mapa {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    grid-area: mapa;
+    padding-left: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    padding-left: 30px;
+}
+
+.tituloShop {
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+i {
+    color: white;
+}

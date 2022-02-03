@@ -323,7 +323,10 @@ img {
   grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 1fr [4];
   grid-template-rows: repeat(4, 1fr);
-      grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6" "foto7 foto8 foto9" "foto10 foto11 foto12";
+      grid-template-areas: "foto1 foto2 foto3"
+ "foto4 foto5 foto6"
+ "foto7 foto8 foto9"
+ "foto10 foto11 foto12";
   gap: 5px;
 }
 
@@ -489,7 +492,18 @@ img {
     grid-template-columns: 1fr;
     -ms-grid-rows: 1fr [12];
     grid-template-rows: repeat(12, 1fr);
-        grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8" "foto9" "foto10" "foto11" "foto12";
+        grid-template-areas: "foto1"
+ "foto2"
+ "foto3"
+ "foto4"
+ "foto5"
+ "foto6"
+ "foto7"
+ "foto8"
+ "foto9"
+ "foto10"
+ "foto11"
+ "foto12";
   }
   .foto1 {
     grid-row: 2;
@@ -667,7 +681,8 @@ img {
   -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
   grid-row: 15% 85%;
-      grid-template-areas: "titulo titulo2" "contacto mapa";
+      grid-template-areas: "titulo titulo2"
+ "contacto mapa";
 }
 
 .tituloShop {
@@ -747,7 +762,9 @@ i {
   grid-template-columns: 50% 50%;
   -ms-grid-rows: 10% 45% 45%;
   grid-template-rows: 10% 45% 45%;
-      grid-template-areas: "subtituloEst1 subtituloEst2" "foto1 foto3" "foto2 foto4";
+      grid-template-areas: "subtituloEst1 subtituloEst2"
+ "foto1 foto3"
+ "foto2 foto4";
 }
 
 .estadisticas1 {
