@@ -11,6 +11,7 @@
     margin-left: 15px;
 }
 
+
 .estadisticasPadre {
     display: -ms-grid;
     display: grid;
@@ -21,6 +22,8 @@
     grid-template-areas: "subtituloEst1 subtituloEst2"
         "foto1 foto3"
         "foto2 foto4";
+        
+        
 }
 
 .estadisticas1 {

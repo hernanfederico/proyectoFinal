@@ -25,6 +25,16 @@
     color: red;
 }
 
+.imagenLogo {
+    margin-left: center;
+    display: inline;
+}
+
+.imagenLogo:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
 footer {
     color: cornsilk;
     text-decoration: underline overline;
