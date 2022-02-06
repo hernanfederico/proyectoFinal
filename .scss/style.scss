@@ -1,6 +1,6 @@
 @import "index";
 @import "shop";
-@import "estadisticas";
+@import "plantel";
 @import "fotos";
 @import "historia";
 
@@ -40,23 +40,32 @@ footer {
     text-decoration: underline overline;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 15px;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
+    margin-top:20px;
+    background: radial-gradient(circle, #f00000 0%, #4f0505 100%);
+    text-align: center;
 }
 
-.fab {
-    margin-left: 40px;
-}
 
 h1 {
     color: white;
     text-decoration: underline;
+    text-decoration-thickness: red;
     font-size: 30px;
-    font-family: 'Staatliches', cursive;
+    font-family:fantasy;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 15px;
+}
+
+H2 {
+    color: white;
+    text-decoration: underline overline;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 15px;
 }
 
 h3 {

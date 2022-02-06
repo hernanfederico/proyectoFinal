@@ -1,0 +1,173 @@
+.plantel {
+
+
+    .card-body 
+    {
+        display: flex;
+        justify-content: center;
+
+        }
+
+    img {
+        padding-left: 15px;
+        display: flex;
+        justify-content: center;
+        
+   
+    }
+    h5 {
+        padding-left: 10px;
+    }
+
+    .card-title {
+        color: white;
+        font-size: 20px;
+        display: inline-block;
+        margin-right: 20px;
+       margin-top: 10px;
+
+    }
+
+    .num {
+        color: red;
+        display: inline-block;
+        font-family: 'Press Start 2P', cursive;
+        font-family: 'Staatliches', cursive;
+        font-size: 35px;
+        background-color: white;
+        border-style:hidden;
+        
+        
+    
+        
+    }
+
+
+
+
+}
+
+.arqueros {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "milton bacchia segovia sosa";
+
+}
+
+.arq1 {
+    grid-area: milton;
+}
+
+.arq2 {
+    grid-area: bacchia;
+}
+
+.arq3 {
+    grid-area: segovia;
+}
+
+.arq4 {
+    grid-area: sosa;
+}
+
+
+.defensores {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "asis barreto bustos costa"
+        "chaco laso ortega ostachuk";
+
+}
+
+.def1 {
+    grid-area: asis;
+   
+
+}
+
+.def2 {
+    grid-area: barreto;
+}
+
+.def3 {
+    grid-area: bustos;
+}
+
+.def4 {
+    grid-area: costa;
+}
+
+.def5 {
+    grid-area: chaco;
+}
+
+.def6 {
+    grid-area: laso;
+}
+
+def7 {
+    grid-area: ortega;
+}
+
+def8 {
+    grid-area: ostachuk;
+}
+
+.mediocampistas
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "benavidez mingo gonzalez pacchini"
+    "pozo roa romero soñora"
+
+ }
+
+.med1 {
+    grid-area: benavidez;
+}
+.med2 {
+    grid-area: mingo;
+}
+.med3 {
+    grid-area: gonzalez;
+}
+.med4 {
+    grid-area: pacchini;
+}
+.med5 {
+    grid-area: pozo;
+}
+.med6 {
+    grid-area: roa;
+}
+.med7 {
+    grid-area: romero;
+}
+.med8 {
+    grid-area: soñora;
+}
+
+.delanteros {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "marquez romero sayago"
+ }
+
+ .del1 {
+     grid-area: marquez;
+ }
+.del2 {
+    grid-area: romero;
+}
+
+.del3 {
+    grid-area: sayago;
+}
