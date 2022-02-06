@@ -1,46 +1,53 @@
 .plantel {
 
+    margin: 5px 5px 5px 5px;
 
-    .card-body 
-    {
+
+    .card-body {
         display: flex;
         justify-content: center;
-
-        }
+        background-color: $crema;
+        border: 10px;
+        border-color: $blanco;
+    }
 
     img {
-        padding-left: 15px;
+
         display: flex;
         justify-content: center;
-        
-   
+
+
     }
+
     h5 {
         padding-left: 10px;
+        color: $rojo;
     }
 
     .card-title {
-        color: white;
+
         font-size: 20px;
+        font-family: 'Anton', sans-serif;
+        font-family: 'Bebas Neue', cursive;
+        font-family: 'Press Start 2P', cursive;
+        font-family: 'Staatliches', cursive;
+        font-family: 'Syne Tactile', cursive;
         display: inline-block;
         margin-right: 20px;
-       margin-top: 10px;
+        margin-top: 10px;
 
     }
 
     .num {
-        color: red;
+
         display: inline-block;
         font-family: 'Press Start 2P', cursive;
         font-family: 'Staatliches', cursive;
         font-size: 35px;
-        background-color: white;
-        border-style:hidden;
-        
-        
-    
-        
+
+
     }
+
 
 
 
@@ -53,23 +60,40 @@
     grid-template-rows: 1fr;
     grid-template-areas:
         "milton bacchia segovia sosa";
+    gap: 3px;
+    margin-right: 5px;
 
 }
 
 .arq1 {
     grid-area: milton;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
+
+
 }
 
 .arq2 {
     grid-area: bacchia;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
+
 }
 
 .arq3 {
     grid-area: segovia;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
 
 .arq4 {
     grid-area: sosa;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
 
 
@@ -80,77 +104,136 @@
     grid-template-areas:
         "asis barreto bustos costa"
         "chaco laso ortega ostachuk";
+    gap: 3px;
+    margin-right: 5px;
 
 }
 
 .def1 {
     grid-area: asis;
-   
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
+
 
 }
 
 .def2 {
     grid-area: barreto;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
 
 .def3 {
     grid-area: bustos;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
 
 .def4 {
     grid-area: costa;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
 
 .def5 {
     grid-area: chaco;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
 
 .def6 {
     grid-area: laso;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
 
-def7 {
+.def7 {
     grid-area: ortega;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
 
-def8 {
+.def8 {
     grid-area: ostachuk;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
 
-.mediocampistas
-{
+.mediocampistas {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "benavidez mingo gonzalez pacchini"
-    "pozo roa romero soñora"
+        "benavidez mingo gonzalez pacchini"
+        "pozo roa romero soñora";
+    gap: 3px;
+    margin-right: 5px;
 
- }
+}
 
 .med1 {
     grid-area: benavidez;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
+
 .med2 {
     grid-area: mingo;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
+
 .med3 {
     grid-area: gonzalez;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
+
+
 .med4 {
     grid-area: pacchini;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
+
 .med5 {
     grid-area: pozo;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
+
 .med6 {
     grid-area: roa;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
+
 .med7 {
     grid-area: romero;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
+
 .med8 {
     grid-area: soñora;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
 
 .delanteros {
@@ -158,16 +241,28 @@ def8 {
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "marquez romero sayago"
- }
+        "marquez romero sayago";
+    gap: 3px;
+    margin-right: 5px;
+}
 
- .del1 {
-     grid-area: marquez;
- }
+.del1 {
+    grid-area: marquez;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
+}
+
 .del2 {
     grid-area: romero;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }
 
 .del3 {
     grid-area: sayago;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
 }

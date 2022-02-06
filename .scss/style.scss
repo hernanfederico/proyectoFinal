@@ -1,3 +1,4 @@
+@import "variables";
 @import "index";
 @import "shop";
 @import "plantel";
@@ -18,11 +19,11 @@
 }
 
 .nav-link {
-    color: white;
+    color: $blanco;
 }
 
 .nav-link:hover {
-    color: red;
+    color: $rojo;
 }
 
 .imagenLogo {
@@ -49,10 +50,9 @@ footer {
 
 
 h1 {
-    color: white;
+    color: $blanco;
     text-decoration: underline;
-    text-decoration-thickness: red;
-    font-size: 30px;
+    text-decoration-thickness: $rojo;
     font-family:fantasy;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -60,7 +60,7 @@ h1 {
 }
 
 H2 {
-    color: white;
+    color: $blanco;
     text-decoration: underline overline;
     font-size: 25px;
     padding-top: 20px;
@@ -69,7 +69,7 @@ H2 {
 }
 
 h3 {
-    color: wheat;
+    color: $blanco;
     text-decoration: underline overline;
     padding-top: 20px;
 }
@@ -88,7 +88,7 @@ li {
 }
 
 a {
-    color: white;
+    color: $blanco;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
