@@ -84,14 +84,17 @@
   padding-left: 15px;
 }
 
-.tituloMapa {
+.tituloMapa, .tituloMapa--nuevo {
   color: white;
-  text-decoration: underline;
   font-size: 30px;
   font-family: 'Staatliches', cursive;
+}
+
+.tituloMapa--nuevo {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-left: 15px;
+  text-decoration: underline;
 }
 
 .btn {
@@ -142,7 +145,7 @@
   grid-area: titulo;
 }
 
-.tituloMapa {
+.tituloMapa, .tituloMapa--nuevo {
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 2;
@@ -189,7 +192,8 @@ i {
 }
 
 .plantel {
-  margin: 5px 5px 5px 5px;
+  margin-right: 10px;
+  margin-bottom: 50px;
 }
 
 .plantel .card-body {
@@ -199,9 +203,14 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(245, 222, 179, 0.863);
+  /*
+        background: rgb(245,240,147);
+        background: linear-gradient(0deg, rgba(245,240,147,1) 19%, rgba(245,238,92,1) 100%);
+        */
+  background: #fff988;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(71%, #fff988), to(#fcf9b7));
+  background: linear-gradient(0deg, #fff988 71%, #fcf9b7 100%);
   border: 10px;
-  border-color: white;
 }
 
 .plantel img {
@@ -213,21 +222,14 @@ i {
           justify-content: center;
 }
 
+.plantel h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .plantel h5 {
   padding-left: 10px;
   color: red;
-}
-
-.plantel .card-title {
-  font-size: 20px;
-  font-family: 'Anton', sans-serif;
-  font-family: 'Bebas Neue', cursive;
-  font-family: 'Press Start 2P', cursive;
-  font-family: 'Staatliches', cursive;
-  font-family: 'Syne Tactile', cursive;
-  display: inline-block;
-  margin-right: 20px;
-  margin-top: 10px;
 }
 
 .plantel .num {
@@ -235,6 +237,17 @@ i {
   font-family: 'Press Start 2P', cursive;
   font-family: 'Staatliches', cursive;
   font-size: 35px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.plantel .card-title {
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Staatliches', cursive;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .arqueros {
@@ -246,7 +259,6 @@ i {
       grid-template-rows: 1fr;
       grid-template-areas: "milton bacchia segovia sosa";
   gap: 3px;
-  margin-right: 5px;
 }
 
 .arq1 {
@@ -294,7 +306,6 @@ i {
       grid-template-rows: 1fr;
       grid-template-areas: "asis barreto bustos costa" "chaco laso ortega ostachuk";
   gap: 3px;
-  margin-right: 5px;
 }
 
 .def1 {
@@ -378,7 +389,6 @@ i {
       grid-template-rows: 1fr;
       grid-template-areas: "benavidez mingo gonzalez pacchini" "pozo roa romero soñora";
   gap: 3px;
-  margin-right: 5px;
 }
 
 .med1 {
@@ -462,7 +472,6 @@ i {
       grid-template-rows: 1fr;
       grid-template-areas: "marquez romero sayago";
   gap: 3px;
-  margin-right: 5px;
 }
 
 .del1 {
@@ -490,6 +499,36 @@ i {
   border: 2px;
   border-color: white;
   border-style: groove;
+}
+
+@media only screen and (max-width: 720px) {
+  .arqueros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "milton" "bacchia" "segovia" "sosa";
+  }
+  .defensores {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[8];
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: "asis" "barreto" "bustos" "costa" "chaco" "laso" "ortega" "ostachuk";
+  }
+  .mediocampistas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[8];
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: "benavidez" "mingo" "gonzalez" "pacchini" "pozo" "roa" "romero" "soñora";
+  }
 }
 
 .tituloFoto {
@@ -667,9 +706,6 @@ i {
   .secciones {
     grid-area: secciones;
   }
-  h1 {
-    color: black;
-  }
   .padre {
     display: -ms-grid;
     display: grid;
@@ -826,9 +862,9 @@ i {
 }
 
 .parrafoHistoria {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 2px;
+  margin: 10px;
   padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: whitesmoke;
 }
 

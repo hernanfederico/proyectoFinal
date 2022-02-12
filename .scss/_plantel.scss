@@ -1,14 +1,22 @@
 .plantel {
 
-    margin: 5px 5px 5px 5px;
+
+    margin-right: 10px;
+    margin-bottom: 50px;
+
 
 
     .card-body {
         display: flex;
         justify-content: center;
-        background-color: $crema;
+        /*
+        background: rgb(245,240,147);
+        background: linear-gradient(0deg, rgba(245,240,147,1) 19%, rgba(245,238,92,1) 100%);
+        */
+        background: rgb(255,249,136);
+        background: linear-gradient(0deg, rgba(255,249,136,1) 71%, rgba(252,249,183,1) 100%);
         border: 10px;
-        border-color: $blanco;
+
     }
 
     img {
@@ -19,24 +27,16 @@
 
     }
 
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
     h5 {
         padding-left: 10px;
         color: $rojo;
     }
 
-    .card-title {
-
-        font-size: 20px;
-        font-family: 'Anton', sans-serif;
-        font-family: 'Bebas Neue', cursive;
-        font-family: 'Press Start 2P', cursive;
-        font-family: 'Staatliches', cursive;
-        font-family: 'Syne Tactile', cursive;
-        display: inline-block;
-        margin-right: 20px;
-        margin-top: 10px;
-
-    }
 
     .num {
 
@@ -44,13 +44,22 @@
         font-family: 'Press Start 2P', cursive;
         font-family: 'Staatliches', cursive;
         font-size: 35px;
+        margin-right: 20px;
+        margin-top: 10px;
 
 
     }
 
+    .card-title {
 
+        font-size: 30px;
+        font-family: 'Press Start 2P', cursive;
+        font-family: 'Staatliches', cursive;
+        display: inline-block;
+        margin-right: 20px;
+        margin-top: 10px;
 
-
+    }
 
 }
 
@@ -61,7 +70,7 @@
     grid-template-areas:
         "milton bacchia segovia sosa";
     gap: 3px;
-    margin-right: 5px;
+
 
 }
 
@@ -105,7 +114,7 @@
         "asis barreto bustos costa"
         "chaco laso ortega ostachuk";
     gap: 3px;
-    margin-right: 5px;
+
 
 }
 
@@ -175,7 +184,7 @@
         "benavidez mingo gonzalez pacchini"
         "pozo roa romero soñora";
     gap: 3px;
-    margin-right: 5px;
+
 
 }
 
@@ -243,7 +252,7 @@
     grid-template-areas:
         "marquez romero sayago";
     gap: 3px;
-    margin-right: 5px;
+
 }
 
 .del1 {
@@ -265,4 +274,51 @@
     border: 2px;
     border-color: $blanco;
     border-style: groove;
+}
+
+@media only screen and (max-width: 720px) {
+
+    .arqueros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "milton"
+            "bacchia"
+            "segovia"
+            "sosa";
+    }
+
+    .defensores {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+            "asis"
+            "barreto"
+            "bustos"
+            "costa"
+            "chaco"
+            "laso"
+            "ortega"
+            "ostachuk";
+
+    }
+
+    .mediocampistas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+            "benavidez"
+            "mingo"
+            "gonzalez"
+            "pacchini"
+            "pozo"
+            "roa"
+            "romero"
+            "soñora";
+
+    }
+
 }

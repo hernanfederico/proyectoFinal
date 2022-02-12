@@ -4,12 +4,19 @@
 
 .tituloMapa {
     color: white;
-    text-decoration: underline;
     font-size: 30px;
     font-family: 'Staatliches', cursive;
+  
+}
+
+.tituloMapa--nuevo 
+{
+    @extend.tituloMapa;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 15px;
+    text-decoration: underline;
+
 }
 
 .btn {
