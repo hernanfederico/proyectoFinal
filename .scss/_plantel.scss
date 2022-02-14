@@ -246,7 +246,7 @@
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1fr;
     grid-template-areas:
-        "marquez romero sayago";
+        "marquez fernandez sayago batallini";
     gap: 3px;
 
 }
@@ -259,7 +259,7 @@
 }
 
 .del2 {
-    grid-area: romero;
+    grid-area: fernandez;
     border: 2px;
     border-color: $blanco;
     border-style: groove;
@@ -270,6 +270,14 @@
     border: 2px;
     border-color: $blanco;
     border-style: groove;
+}
+
+.del4 {
+    grid-area: batallini;
+    border: 2px;
+    border-color: $blanco;
+    border-style: groove;
+
 }
 
 @media only screen and (max-width: 720px) {
@@ -315,6 +323,16 @@
             "romero"
             "soñora";
 
+    }
+    .delanteros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "marquez"
+        "fernandez"
+        "sayago"
+        "batallini";
     }
 
 }

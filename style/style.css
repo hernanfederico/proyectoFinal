@@ -377,8 +377,8 @@ i {
 }
 
 .med7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: romero;
   border: 2px;
   border-color: white;
@@ -401,7 +401,7 @@ i {
       grid-template-columns: 25% 25% 25% 25%;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-      grid-template-areas: "marquez romero sayago";
+      grid-template-areas: "marquez fernandez sayago batallini";
   gap: 3px;
 }
 
@@ -417,7 +417,7 @@ i {
 .del2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: romero;
+  grid-area: fernandez;
   border: 2px;
   border-color: white;
   border-style: groove;
@@ -427,6 +427,15 @@ i {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: sayago;
+  border: 2px;
+  border-color: white;
+  border-style: groove;
+}
+
+.del4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: batallini;
   border: 2px;
   border-color: white;
   border-style: groove;
@@ -459,6 +468,15 @@ i {
     -ms-grid-rows: (1fr)[8];
         grid-template-rows: repeat(8, 1fr);
         grid-template-areas: "benavidez" "mingo" "gonzalez" "pacchini" "pozo" "roa" "romero" "soñora";
+  }
+  .delanteros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "marquez" "fernandez" "sayago" "batallini";
   }
 }
 
@@ -864,10 +882,6 @@ i {
 
 .imagenCopa.recopa {
   -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 6;
-  grid-column: 6;
-  -ms-grid-row: 1;
   -ms-grid-column: 6;
   grid-area: recopa;
 }
@@ -888,6 +902,56 @@ i {
   font-size: 50px;
   font-family: 'Press Start 2P', cursive;
   font-family: 'Staatliches', cursive;
+}
+
+@media only screen and (max-width: 720px) {
+  .padreHistoria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "intercontinental libertadores" "interamericana supercopa"  "sudamericana recopa"  "suruga suruga";
+  }
+  .imagenCopa.intercontinental {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: intercontinental;
+  }
+  .imagenCopa.libertadores {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: libertadores;
+  }
+  .imagenCopa.interamericana {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: interamericana;
+    width: 150px;
+    height: 135px;
+  }
+  .imagenCopa.supercopa {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: supercopa;
+  }
+  .imagenCopa.sudamericana {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: sudamericana;
+  }
+  .imagenCopa.recopa {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: recopa;
+  }
+  .imagenCopa.suruga {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: suruga;
+  }
 }
 
 * {

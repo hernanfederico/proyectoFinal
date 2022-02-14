@@ -73,10 +73,7 @@
 }
 
 .imagenCopa.recopa {
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-grid-column: 6;
-    grid-column: 6;
+    
     grid-area: recopa;
 }
 
@@ -95,3 +92,56 @@
     font-family: 'Press Start 2P', cursive;
     font-family: 'Staatliches', cursive;
 }
+
+
+@media only screen and (max-width: 720px) {
+
+    .padreHistoria 
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "intercontinental libertadores"
+        "interamericana supercopa" 
+        "sudamericana recopa" 
+        "suruga suruga";
+    }
+    
+.imagenCopa.intercontinental {
+
+    grid-area: intercontinental;
+}
+
+.imagenCopa.libertadores {
+  
+    grid-area: libertadores;
+}
+
+.imagenCopa.interamericana {
+  
+    grid-area: interamericana;
+    width: 150px;
+    height: 135px;
+}
+
+.imagenCopa.supercopa {
+
+    grid-area: supercopa;
+}
+
+.imagenCopa.sudamericana {
+
+    grid-area: sudamericana;
+}
+
+.imagenCopa.recopa {
+    
+    grid-area: recopa;
+}
+
+.imagenCopa.suruga {
+    grid-area: suruga;
+}
+
+  }
