@@ -1,83 +1,18 @@
 @charset "UTF-8";
-.containerIndex1 {
-  padding-bottom: 40px;
+.card {
+  background-color: red;
+  border: 5px;
+  border-color: white;
+  border-style: double;
 }
 
-.containerIndex1 h2 {
-  color: white;
-  -webkit-text-decoration-line: underline overline;
-  text-decoration-line: underline overline;
-  -webkit-text-decoration-style: double;
-  text-decoration-style: double;
-  text-underline-position: under;
-  font-size: 30px;
-  font-family: 'Staatliches', cursive;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 15px;
-  margin-top: 100px;
-}
-
-.containerIndex1 img {
-  float: right;
-  width: 50%;
-  height: 50%;
-}
-
-.containerIndex1 p {
-  color: white;
-  padding-left: 15px;
-}
-
-.containerIndex2 {
-  padding-bottom: 40px;
-}
-
-.containerIndex2 h2 {
-  color: white;
-  -webkit-text-decoration-line: underline overline;
-  text-decoration-line: underline overline;
-  -webkit-text-decoration-style: double;
-  text-decoration-style: double;
-  text-underline-position: under;
-  font-size: 30px;
-  font-family: 'Staatliches', cursive;
-  padding-top: 20px;
-  padding-left: 700px;
-  padding-bottom: 20px;
-  margin-left: 15px;
-  margin-top: 100px;
-}
-
-.containerIndex2 img {
-  float: left;
-  width: 50%;
-  height: 50%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.containerIndex2 p {
+.card p {
   color: white;
 }
 
-.tituloNoticia {
-  color: white;
-  -webkit-text-decoration-line: underline overline;
-  text-decoration-line: underline overline;
-  -webkit-text-decoration-style: double;
-  text-decoration-style: double;
-  text-underline-position: under;
-  font-size: 30px;
-  font-family: 'Staatliches', cursive;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 15px;
-  margin-top: 100px;
-}
-
-.videoKun {
-  margin-left: 15px;
+.card img {
+  width: 100%;
+  height: 100%;
 }
 
 .row {
@@ -203,10 +138,6 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*
-        background: rgb(245,240,147);
-        background: linear-gradient(0deg, rgba(245,240,147,1) 19%, rgba(245,238,92,1) 100%);
-        */
   background: #fff988;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(71%, #fff988), to(#fcf9b7));
   background: linear-gradient(0deg, #fff988 71%, #fcf9b7 100%);
@@ -861,13 +792,6 @@ i {
   transform: scale(1.3);
 }
 
-.parrafoHistoria {
-  margin: 10px;
-  padding: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: whitesmoke;
-}
-
 .imagenCopa {
   padding-top: 15px;
   width: 135px;
@@ -1033,9 +957,7 @@ h3 {
 }
 
 body {
-  background: #e20c0c;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(226, 12, 12, 0.902398)), color-stop(0%, rgba(226, 12, 12, 0.902398)), color-stop(0%, #e40b0b), color-stop(0%, rgba(121, 9, 9, 0)), color-stop(0%, #7d0909), color-stop(18%, #a00606), color-stop(45%, red), color-stop(100%, #e80000), to(black));
-  background: linear-gradient(90deg, rgba(226, 12, 12, 0.902398) 0%, rgba(226, 12, 12, 0.902398) 0%, #e40b0b 0%, rgba(121, 9, 9, 0) 0%, #7d0909 0%, #a00606 18%, red 45%, #e80000 100%, black 100%);
+  background-color: red;
 }
 
 li {
@@ -1060,7 +982,10 @@ nav {
   text-align: center;
 }
 
-img {
-  display: block;
+p {
+  margin: 10px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
 }
 /*# sourceMappingURL=style.css.map */
