@@ -54,8 +54,9 @@
     -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%;
     grid-row: 15% 85%;
-    grid-template-areas: "titulo titulo2"
-        "contacto mapa";
+    grid-template-areas: 
+    "titulo titulo2"
+    "contacto mapa";
 }
 
 .tituloShop {
@@ -105,3 +106,17 @@ form {
 i {
     color: white;
 }
+
+@media only screen and (max-width: 720px) {
+
+.contactoPadre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 40% 10% 40%;
+    grid-template-areas: 
+    "titulo"
+    "contacto"
+    "titulo2"
+    "mapa";
+}
+ }
