@@ -75,10 +75,8 @@ h3 {
 }
 
 body {
-    background: #e20c0c;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(226, 12, 12, 0.902398)), color-stop(0%, rgba(226, 12, 12, 0.902398)), color-stop(0%, #e40b0b), color-stop(0%, rgba(121, 9, 9, 0)), color-stop(0%, #7d0909), color-stop(18%, #a00606), color-stop(45%, red), color-stop(100%, #e80000), to(black));
-    background: linear-gradient(90deg, rgba(226, 12, 12, 0.902398) 0%, rgba(226, 12, 12, 0.902398) 0%, #e40b0b 0%, rgba(121, 9, 9, 0) 0%, #7d0909 0%, #a00606 18%, red 45%, #e80000 100%, black 100%);
-}
+    background-color: $rojo;
+      }
 
 li {
     display: inline-block;
@@ -102,8 +100,17 @@ nav {
     text-align: center;
 }
 
-img {
-    display: block;
+@mixin sizes ($margin,$padding) {
+
+    margin: $margin;
+    padding: $padding;
+    
+}
+
+p {
+    @include sizes(10px,10px );
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
 }
 
 /*# sourceMappingURL=style.css.map */
