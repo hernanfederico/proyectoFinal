@@ -31,9 +31,13 @@
   border-collapse: collapse;
   border: 3px solid black;
   table-layout: fixed;
-  background-color: white;
+  background-color: #fff988;
   font-style: italic;
   text-align: center;
+}
+
+.tablasFechas .fechas {
+  display: inline-block;
 }
 
 .tablasFechas .fechas1 {
@@ -59,12 +63,12 @@
 }
 
 tbody {
-  background-color: white;
   border-collapse: collapse;
   border: 3px solid black;
   table-layout: fixed;
   font-style: italic;
   text-align: center;
+  background-color: #fff988;
 }
 
 .row {
