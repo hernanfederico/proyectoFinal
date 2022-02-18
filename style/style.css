@@ -15,6 +15,58 @@
   height: 100%;
 }
 
+.tablasFechas {
+  margin-top: 90px;
+  margin-right: 60px;
+}
+
+.tablasFechas .table {
+  display: inline;
+  margin-left: 20px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  width: 50%;
+  height: 50%;
+  border-collapse: collapse;
+  border: 3px solid black;
+  table-layout: fixed;
+  background-color: white;
+  font-style: italic;
+  text-align: center;
+}
+
+.tablasFechas .fechas1 {
+  display: inline-block;
+  margin-left: 5em;
+}
+
+.tablasFechas .fechas2 {
+  display: inline-block;
+  margin-left: 5em;
+}
+
+.tablasFechas .fecha2 {
+  margin-bottom: 2em;
+  margin-top: 5em;
+  margin-right: 2em;
+}
+
+.tablasFechas .fecha4 {
+  margin-bottom: 2em;
+  margin-top: 5em;
+  margin-right: 2em;
+}
+
+tbody {
+  background-color: white;
+  border-collapse: collapse;
+  border: 3px solid black;
+  table-layout: fixed;
+  font-style: italic;
+  text-align: center;
+}
+
 .row {
   padding-left: 15px;
 }
