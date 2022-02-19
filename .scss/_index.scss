@@ -1,13 +1,10 @@
-
-
-
 .card {
     background-color: $rojo;
     border: 5px;
     border-color: $blanco;
     border-style: double;
-   
-    
+
+
     p {
         color: $blanco;
     }
@@ -20,9 +17,13 @@
 
 .tablasFechas {
 
-    margin-left: 14em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 14em;
     margin-top: 3em;
     margin-bottom: 2em;
+    background: radial-gradient(circle, #f00000 0%, #4f0505 100%);
+
 
 
 
@@ -32,7 +33,7 @@
         width: 50%;
         height: 50%;
         table-layout: fixed;
-        font-style:italic; 
+        font-style: italic;
         text-align: center;
         color: $blanco;
     }
@@ -41,9 +42,9 @@
         border: solid 3px $blanco;
     }
 
- }
+}
 
- .partidos {
+.partidos {
 
     margin-left: 7em;
 
@@ -51,42 +52,41 @@
         display: inline-block;
         margin-left: 9em;
         margin-top: 1em;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
+      
 
     }
 
-    
-.fechas1 
-{
-    display: inline-block;
-    margin-left: 2em;
-       
+
+    .fechas1 {
+        display: inline-block;
+        margin-left: 2em;
+
+    }
+
+    .fechas2 {
+        display: inline-block;
+        margin-left: 2em;
+    }
+
+
+    .fecha2 {
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-right: 2em;
+
+
+
+    }
+
+
+
+    .fecha4 {
+
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-right: 2em;
+
+    }
+
 }
-
-.fechas2 
-{
-    display: inline-block;
-    margin-left: 2em;
-}
-
-
-.fecha2 {
-    margin-bottom: 2em;
-    margin-top: 5em;
-    margin-right: 2em;
-    
-    
-
-}
-
-
-
-.fecha4 {
-
-    margin-bottom: 2em;
-    margin-top: 5em;
-    margin-right: 2em;
-    
-}
-
- }
