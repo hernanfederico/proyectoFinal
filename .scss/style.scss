@@ -7,17 +7,18 @@
 
 
 
+
 * {
     padding: 0;
     margin: 0;
 }
 
 /*secciones en general*/
-.nav-item {
-    margin-left: 10px;
-    padding-left: 20px;
-}
 
+.encabezado 
+{
+    display: flex;
+}
 .nav-link {
     color: $blanco;
 }
@@ -26,10 +27,12 @@
     color: $rojo;
 }
 
+/*
 .imagenLogo {
     margin-left: center;
     display: inline;
 }
+*/
 
 .imagenLogo:hover {
     -webkit-transform: scale(1.3);
