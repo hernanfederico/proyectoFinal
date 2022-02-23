@@ -3,6 +3,19 @@
     border: 5px;
     border-color: $blanco;
     border-style: double;
+    width: 100%;
+    position: relative;
+    
+.card::after {
+    position: relative;
+   padding-bottom: 100%;
+}
+
+.card-body {
+   position: relative;
+    width: 100%;
+    height: 100%;
+}
     
 
 
@@ -166,6 +179,7 @@
     grid-area: fecha2;
     padding-left: 5px;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .fecha3 {
@@ -178,12 +192,14 @@
     grid-area: fecha4;
     padding-left: 5px;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .fecha5 {
     grid-area: fecha5;
     padding-left: 5px;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 footer {
