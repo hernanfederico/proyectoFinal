@@ -27,34 +27,17 @@
 <body>
 
     <header>
-        <!-- Lista desordenadas -->
-        <nav class="col-sm-12">
-
-            <a href="index.html"> <img class="imagenLogo" src="./imagenes/logo.webp" alt="logo"> </a>
-
-            <ul class="nav nav-pills nav-fill">
-                <li class="nav-item">
-                    <i class="fas fa-home"></i>
-                    <a class="nav-link" href="index.html">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <i class="fas fa-history"></i>
-                    <a class="nav-link" href="./secciones/historia.html">Historia</a>
-                </li>
-                <li class="nav-item">
-                    <i class="far fa-images"></i>
-                    <a class="nav-link" href="./secciones/fotos.html">Fotos</a>
-                </li>
-                <li class="nav-item">
-                    <i class="far fa-envelope-open"></i>
-                    <a class="nav-link" href="./secciones/shop.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <i class="fas fa-users"></i>
-                    <a class="nav-link" href="./secciones/plantel.html">Plantel</a>
-            </ul>
-
-        </nav>
+        <div class="bg-img">
+            <div class="container">
+                <div class="topnav">
+                    <a href="index.html">Noticias</a>
+                    <a href="./secciones/historia.html">Historia</a>
+                    <a href="./secciones/fotos.html">Fotos</a>
+                    <a href="./secciones/contacto.html">Contacto</a>
+                    <a href="./secciones/plantel.html">Plantel</a>
+                </div>
+            </div>
+        </div>
 
     </header>
 
@@ -76,6 +59,8 @@
             Torneo de Verano 2022 y, lógicamente, el campo de juego no aguantó su estabilidad.
         </p>
 
+        <img class="noticia1" src="./imagenes/puntajes.webp" alt="campo">
+
         <p>
             La pelota iba a los saltos. Y esto no tiene nada que ver con las ideas o estilos de juego de cada uno de los
             equipos. La Liga Profesional de Fútbol debería exigirle a todos los clubes que tengan en excelente
@@ -84,36 +69,27 @@
 
 
     </section>
+    <section class="otrasNoticias">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Otras noticias
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                 <a href="actitud.html">Actitud</a> <br>
+                 <a href="reemplazante.html">Reemplazante</a> <br>
+                 <a href="debut.html">Debut</a> <br>
+                 <a href="la10.html">La 10</a> <br>
+                 <a href="mejorar.html">Mejorar</a> <br>
+                </div>
+              </div>
+            </div>
+        </section>
 
-    <div class="card-group">
-
-        <div class="card">
-            <img src="./imagenes/toto.webp" alt="pozzo">
-            <div class="card-body">
-                <h5> <a href="reemplazante.html"> Hay reemplazante </a> </h5>
-                <p>Pretende que no extrañen a Fabricio Bustos: La gran actuación de Alex Vigo en el triunfo de
-                    Independiente ante Arsenal.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/vigonoti.webp" alt="vigo">
-            <div class="card-body">
-                <h5> <a href="la10.html">¿Y si el “diez” es Toto Pozzo? </a> </h5>
-                <p> La 10 quedó para Soñora, dueño de un juego más pausado y pensante pero
-                    Pozzo, podría darle ese desequilibrio en los últimos metros.
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/triunfo.webp" alt="triunfo">
-            <div class="card-body">
-                <h5> <a href="actitud.html"> Mucha actitud </a> </h5>
-                <p> No es correr por correr, tiene un fin: La sorprendente actitud de Damián Batallini en la
-                    victoria ante Arsenal
-                </p>
-            </div>
-        </div>
-    </div>
+   
 
     <footer>
         Proximamente seguinos en nuestras redes sociales!!! <br>

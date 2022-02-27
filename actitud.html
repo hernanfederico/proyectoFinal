@@ -27,38 +27,21 @@
 <body>
 
     <header>
-        <!-- Lista desordenadas -->
-        <nav class="col-sm-12">
-
-            <a href="index.html"> <img class="imagenLogo" src="./imagenes/logo.webp" alt="logo"> </a>
-
-            <ul class="nav nav-pills nav-fill">
-                <li class="nav-item">
-                    <i class="fas fa-home"></i>
-                    <a class="nav-link" href="index.html">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <i class="fas fa-history"></i>
-                    <a class="nav-link" href="./secciones/historia.html">Historia</a>
-                </li>
-                <li class="nav-item">
-                    <i class="far fa-images"></i>
-                    <a class="nav-link" href="./secciones/fotos.html">Fotos</a>
-                </li>
-                <li class="nav-item">
-                    <i class="far fa-envelope-open"></i>
-                    <a class="nav-link" href="./secciones/shop.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <i class="fas fa-users"></i>
-                    <a class="nav-link" href="./secciones/plantel.html">Plantel</a>
-            </ul>
-
-        </nav>
+        <div class="bg-img">
+            <div class="container">
+                <div class="topnav">
+                    <a href="index.html">Noticias</a>
+                    <a href="./secciones/historia.html">Historia</a>
+                    <a href="./secciones/fotos.html">Fotos</a>
+                    <a href="./secciones/contacto.html">Contacto</a>
+                    <a href="./secciones/plantel.html">Plantel</a>
+                </div>
+            </div>
+        </div>
 
     </header>
 
-    <!-- Enlaces absolutos interactividad -->
+   
     <h1> Mucha actitud </h1>
 
     <section>
@@ -81,6 +64,9 @@
             pases que realizó, completó 18, es decir, una efectividad del 82 por ciento. Además, de los 17 duelos que se
             le plantearon, el atacante ganó en 10.<br>
         </p>
+
+        <img class="noticia1" src="./imagenes/triunfo.webp" alt="triunfo">
+
         <p>
             Por algo lo quiso Eduardo Domínguez. Es un futbolista con mucho andar, experimentado y sin delicadez a la
             hora
@@ -97,38 +83,30 @@
 
     </section>
 
-    <div class="card-group">
-        <div class="card">
-            <img src="./imagenes/bata.webp" alt="batallini">
-            <div class="card-body">
-                <h5> <a href="debut.html"> Debut de los refuerzos </a> </h5>
-                <p>Independiente tuvo su primer partido oficial en el 2022 y si bien fue derrota
-                    debutaron tres de los cuatro refuerzos que trajo el club en este libro de pases.</p>
+    <section class="otrasNoticias">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Otras noticias
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                 <a href="reemplazante.html">Reemplazante</a> <br>
+                 <a href="campo.html">Campo</a> <br>
+                 <a href="debut.html">Debut</a> <br>
+                 <a href="la10.html">La 10</a> <br>
+                 <a href="mejorar.html">Mejorar</a> <br>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/edudominguez.webp" alt="...">
-            <div class="card-body">
-                <h5> <a href="mejorar.html">"Estamos obligados a mejorar"</a> </h5>
-                <p> El entrenador de Independiente habló en conferencia de prensa, dio su sensación de la derrota
-                    del Rojo y marcó los puntos bajos del equipo. ¡Mirá lo que dijo!
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/puntajes.webp" alt="...">
-            <div class="card-body">
-                <h5> <a href="campo.html">"Un campito" </a> </h5>
-                <p> Influyó en el desarrollo. El campo de juego del estadio de Estudiantes estaba en muy malas
-                    condiciones. Los partidos jugados en el verano hicieron estragos ¡Inadmisible!
-                </p>
-            </div>
-        </div>
-    </div>
+        </section>
 
+   
 
     <footer>
-        Proximamente seguinos en nuestras redes sociales!!! <br>
+        <h5>Proximamente seguinos en nuestras redes sociales!!! </h5> <br>
         <i class="fab fa-facebook-square"></i>
         <i class="fab fa-instagram"></i>
         <i class="fab fa-twitter-square"></i>

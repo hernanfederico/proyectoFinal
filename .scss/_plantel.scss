@@ -280,6 +280,51 @@
 
 }
 
+@media only screen and (max-width: 1340px) {
+
+    .arqueros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "milton bacchia"
+            "segovia sosa";
+    }
+
+    .defensores {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "asis barreto"
+            "bustos costa"
+            "chaco laso"
+            "ortega ostachuk";
+
+    }
+
+    .mediocampistas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "benavidez mingo"
+            "gonzalez pacchini"
+            "pozo roa"
+            "romero soñora";
+
+    }
+    .delanteros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "marquez fernandez"
+        "sayago batallini";
+    }
+
+}
+
 @media only screen and (max-width: 720px) {
 
     .arqueros {

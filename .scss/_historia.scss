@@ -1,6 +1,6 @@
 .imagenCopa {
-    padding-bottom: 10%;
-    padding-left: 25%;
+    margin-bottom: 10%;
+    margin-left: 20%;
     -webkit-transition: .8s;
     transition: .8s;
 }
@@ -14,11 +14,12 @@
 
 .imagenCopa {
     padding-top: 15px;
-    width: 135px;
-    height: 135px;
+    width: 80px;
+    height: 80px;
 }
 
 .padreHistoria {
+    
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[6];
@@ -86,7 +87,7 @@
 }
 
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1080px) {
 
     .padreHistoria 
     {
@@ -102,6 +103,7 @@
 .imagenCopa.intercontinental {
 
     grid-area: intercontinental;
+    
 }
 
 
