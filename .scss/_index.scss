@@ -256,7 +256,7 @@ nav {
 
         display: block;
         overflow-x: auto;
-    }
+    
 
     .zona1 {
 
@@ -278,24 +278,36 @@ nav {
             padding-left: 11.5px;
         }
     }
+    }
 
+    .partidos 
+    {
+
+    img {
+        width: 275px;
+        height: 200px;
+    }
+    
     .fecha2 {
-        margin-left: -6em;
+        margin-left: -5em;
+    
     }
 
     .fecha3 {
-        margin-left: -6em;
+        margin-left: -5em;
+ 
     }
 
     .fecha4 {
-        margin-left: -6em;
+        margin-left: -5em;
+
     }
 
     .fecha5 {
-        margin-left: -6em;
+        margin-left: -5em;
     }
 }
-
+}
 
 
 

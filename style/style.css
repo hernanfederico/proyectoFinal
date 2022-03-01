@@ -203,30 +203,34 @@
     display: block;
     overflow-x: auto;
   }
-  .zona1 {
+  .tablasFechas .zona1 {
     margin-left: -2em;
     grid-area: zona1;
     padding-bottom: 50px;
   }
-  .zona2 {
+  .tablasFechas .zona2 {
     margin-left: -2em;
     grid-area: zona2;
     padding-bottom: 50px;
   }
-  .zona1 th {
+  .tablasFechas .zona1 th {
     padding-left: 11.5px;
   }
-  .fecha2 {
-    margin-left: -6em;
+  .partidos img {
+    width: 275px;
+    height: 200px;
   }
-  .fecha3 {
-    margin-left: -6em;
+  .partidos .fecha2 {
+    margin-left: -5em;
   }
-  .fecha4 {
-    margin-left: -6em;
+  .partidos .fecha3 {
+    margin-left: -5em;
   }
-  .fecha5 {
-    margin-left: -6em;
+  .partidos .fecha4 {
+    margin-left: -5em;
+  }
+  .partidos .fecha5 {
+    margin-left: -5em;
   }
 }
 
